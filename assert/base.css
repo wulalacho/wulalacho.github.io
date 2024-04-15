@@ -28,10 +28,10 @@ body {
 .content {
     width: 75ch;
     max-width: calc(100vw - 6em);
-    margin: 2em auto 2em 5em;
+    margin: 2em auto 2em 8em;
     padding: 3rem 2rem 2rem 2rem;
     box-shadow: 0 0px 5px -3px rgba(0, 0, 0.9, .5), 0 0px 5px -3px rgba(0, 0, 0, .5);
-    background-color: #fbfcff;
+    background-color: rgba(228, 233, 238, 0.1);
     min-height: 500px;
 }
 
@@ -44,7 +44,6 @@ body {
     background-color: rgba(255, 255, 255, 0.8); /* 设置背景颜色和透明度 */
     backdrop-filter: blur(6px); /* 使用毛玻璃效果，可以根据需要调整模糊程度 */
     z-index: 1000; /*确保 header 处于其他内容之上*/
-    font-family: 'Merienda';
     font-size: 88%;
     color: #757575;
 }
@@ -55,33 +54,31 @@ body {
 
 .header a {
     font-size: 130%;
+    font-family: 'Merienda';
 }
 
 .content a {
     text-decoration: none;
 }
-
-
-
 li {
     line-height: 1.8;
 }
 
 li::marker {
-    color: #757575;
+    color: #d1d1d1;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4 {
     font-family: 'Merienda';
-}
+} */
 
 @media (max-width: 900px) {
     .content {
         margin: 2em auto 2em auto;
-        padding: 3rem 1.5rem 2rem 1.5rem;
+        padding: 3rem 2rem 2rem 1.5rem;
         max-width: calc(100vw - 3em);
     }
     
