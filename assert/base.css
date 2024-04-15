@@ -28,7 +28,7 @@ body {
 .content {
     width: 75ch;
     max-width: calc(100vw - 6em);
-    margin: 2em auto 2em 7em;
+    margin: 2em auto 2em 5em;
     padding: 3rem 2rem 2rem 2rem;
     box-shadow: 0 0px 5px -3px rgba(0, 0, 0.9, .5), 0 0px 5px -3px rgba(0, 0, 0, .5);
     background-color: #fbfcff;
@@ -50,7 +50,7 @@ body {
 }
 
 .header span {
-    margin-left: 4em;
+    margin-left: 2em;
 }
 
 .header a {
@@ -83,10 +83,6 @@ h4 {
         margin: 2em auto 2em auto;
         padding: 3rem 1.5rem 2rem 1.5rem;
         max-width: calc(100vw - 3em);
-    }
-
-    .header span {
-        margin-left: 2em;
     }
     
 }
