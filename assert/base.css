@@ -28,24 +28,11 @@ body {
 .content {
     width: 75ch;
     max-width: calc(100vw - 6em);
-    margin: 2em 25% 2em auto;
-    padding: 3rem 2rem 2rem 3rem;
+    margin: 2em auto 2em 7em;
+    padding: 3rem 2rem 2rem 2rem;
     box-shadow: 0 0px 5px -3px rgba(0, 0, 0.9, .5), 0 0px 5px -3px rgba(0, 0, 0, .5);
     background-color: #fbfcff;
     min-height: 500px;
-}
-
-@media (max-width: calc(101ch + 6em)) {
-    .content {
-        /* 在此添加你希望在条件满足时改变的属性 */
-        margin-left: 1em; /* 例如将左边距设为2em */
-    }
-}
-
-@media (max-width: calc(75ch + 6em)) {
-    .content {
-        margin: 2em auto 2em auto;
-    }
 }
 
 .header {
@@ -58,22 +45,23 @@ body {
     backdrop-filter: blur(6px); /* 使用毛玻璃效果，可以根据需要调整模糊程度 */
     z-index: 1000; /*确保 header 处于其他内容之上*/
     font-family: 'Merienda';
-    font-size: 90%;
+    font-size: 88%;
     color: #757575;
 }
 
 .header span {
-    margin-left: 2em;
-    margin-right: 1em;
+    margin-left: 4em;
 }
 
 .header a {
-    font-size: 120%;
+    font-size: 130%;
 }
 
 .content a {
     text-decoration: none;
 }
+
+
 
 li {
     line-height: 1.8;
@@ -81,4 +69,24 @@ li {
 
 li::marker {
     color: #757575;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Merienda';
+}
+
+@media (max-width: 900px) {
+    .content {
+        margin: 2em auto 2em auto;
+        padding: 3rem 1.5rem 2rem 1.5rem;
+        max-width: calc(100vw - 3em);
+    }
+
+    .header span {
+        margin-left: 2em;
+    }
+    
 }
