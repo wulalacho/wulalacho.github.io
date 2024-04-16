@@ -26,7 +26,7 @@ body {
     margin: 0;
 }
 .content {
-    width: 75ch;
+    width: 85ch;
     max-width: calc(100vw - 6em);
     margin: 2em auto 2em 8em;
     padding: 3rem 2rem 2rem 2rem;
@@ -68,12 +68,17 @@ li::marker {
     color: #d1d1d1;
 }
 
-/* h1,
+h1,
 h2,
 h3,
 h4 {
     font-family: 'Merienda';
-} */
+}
+
+.postdate {
+    float: right;
+    font-family: 'Merienda';
+}
 
 @media (max-width: 900px) {
     .content {
