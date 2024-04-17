@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Open sans';
+    src: url("/assert/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    size: 150%;
+    src: url("/assert/fonts/RobotoMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Merienda';
+    src: url("/assert/fonts/Merienda-Bold.ttf");
+}
+
+body {
+    background-color: rgba(208, 214, 220, 0.1);
+    font-family: 'Open sans', Sans Serif,Sans;
+    margin: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1em 0 1em 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* 添加底部边框 */
+    background-color: rgba(255, 255, 255, 0.8); /* 设置背景颜色和透明度 */
+    backdrop-filter: blur(6px); /* 使用毛玻璃效果，可以根据需要调整模糊程度 */
+    z-index: 1000; /*确保 header 处于其他内容之上*/
+    font-size: 88%;
+    color: #757575;
+}
+
+.header span {
+    margin-left: 2em;
+}
+
+.header a {
+    font-size: 130%;
+    font-family: 'Merienda';
+}
