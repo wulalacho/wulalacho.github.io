@@ -1,91 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Markmap</title>
-<style>
-* {
-  margin: 0;
-  padding: 0;
-}
-#mindmap {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-}
-</style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.16.0/dist/style.css"><style>@font-face {
-    font-family: 'Open sans';
-    src: url("/assert/fonts/OpenSans-Regular.ttf");
-}
-
-@font-face {
-    font-family: 'Roboto Mono';
-    size: 150%;
-    src: url("/assert/fonts/RobotoMono-Regular.ttf");
-}
-
-@font-face {
-    font-family: 'Merienda';
-    src: url("/assert/fonts/Merienda-Bold.ttf");
-}
-
-body {
-    background-color: rgba(208, 214, 220, 0.1);
-    font-family: 'Open sans', Sans Serif,Sans;
-    margin: 0;
-}
-
-.header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 1em 0 1em 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* 添加底部边框 */
-    background-color: rgba(255, 255, 255, 0.8); /* 设置背景颜色和透明度 */
-    backdrop-filter: blur(6px); /* 使用毛玻璃效果，可以根据需要调整模糊程度 */
-    z-index: 1000; /*确保 header 处于其他内容之上*/
-    font-size: 88%;
-    color: #757575;
-}
-
-.header span {
-    margin-left: 2em;
-}
-
-.header a {
-    font-size: 130%;
-    font-family: 'Merienda';
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.6">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@latest"></script>
+  <link rel="stylesheet" href="/assert/source/mindmap.css">
+  <style>
+    .markmap {
+      position: relative;
+    }
+    .markmap > svg {
+      width: 100vw; 
+      height: 100vh
+    }
+  </style>
 </head>
+
 <body>
   <div class="header">
     <span>Wulalacho's <a href="/index.html">Home Page</a></span>
-    <span class="true-word">—— MindMap测试</span>
+    <span class="true-word">—— 努力感受生活的每一个瞬间</span>
   </div>
-<svg id="mindmap"></svg>
-<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.16.0/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.16.0/dist/index.js"></script><script>(r => {
-                setTimeout(r);
-              })(() => {
-  const {
-    markmap,
-    mm
-  } = window;
-  const {
-    el
-  } = markmap.Toolbar.create(mm);
-  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
-  document.body.append(el);
-})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
-              const markmap = getMarkmap();
-              window.mm = markmap.Markmap.create(
-                "svg#mindmap",
-                (getOptions || markmap.deriveOptions)(jsonOptions),
-                root2
-              );
-            })(() => window.markmap,null,{"content":"mind map测试","children":[{"content":"测试项目一","children":[{"content":"格式检验","children":[{"content":"代码","children":[],"payload":{"lines":"10,11"}},{"content":"<a href=\"/index.html\">站内跳转</a>","children":[],"payload":{"lines":"11,13"}}],"payload":{"lines":"9,10"}}],"payload":{"lines":"7,8"}},{"content":"测试项目二","children":[],"payload":{"lines":"13,14"}},{"content":"测试项目三","children":[],"payload":{"lines":"15,16"}}],"payload":{"lines":"3,4"}},{})</script>
+  <div class="markmap">
+    <script type="text/template">
+      - markmap
+        - autoloader
+        - transformer
+        - view
+    </script>
+  </div>
+  
 </body>
 </html>
