@@ -21,7 +21,7 @@ body {
     margin: 0;
 }
 .content {
-    width: 80ch;
+    width: 85ch;
     max-width: calc(100vw - 6em);
     margin: 2em auto 2em 8em;
     padding: 3rem 2rem 2rem 2rem;
@@ -38,10 +38,11 @@ body {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* 添加底部边框 */
     background-color: rgba(255, 255, 255, 0.8); /* 设置背景颜色和透明度 */
     backdrop-filter: blur(6px); /* 使用毛玻璃效果，可以根据需要调整模糊程度 */
-    z-index: 1000; /*确保 header 处于其他内容之上*/
+    z-index:998; /*确保 header 处于其他内容之上*/
     font-size: 88%;
     color: #757575;
 }
+
 
 .header span {
     margin-left: 2em;
