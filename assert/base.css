@@ -10,11 +10,6 @@
 }
 
 @font-face {
-    font-family: 'kalam';
-    src: url("/assert/fonts/Kalam-Regular.ttf");
-}
-
-@font-face {
     font-family: 'Merienda';
     src: url("/assert/fonts/Merienda-Bold.ttf");
 }
@@ -26,7 +21,7 @@ body {
     margin: 0;
 }
 .content {
-    width: 85ch;
+    width: 80ch;
     max-width: calc(100vw - 6em);
     margin: 2em auto 2em 8em;
     padding: 3rem 2rem 2rem 2rem;
