@@ -34,7 +34,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 1em 0 1em 0;
+    padding: .5em 0 .6em 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* 添加底部边框 */
     background-color: rgba(255, 255, 255, 0.8); /* 设置背景颜色和透明度 */
     backdrop-filter: blur(6px); /* 使用毛玻璃效果，可以根据需要调整模糊程度 */

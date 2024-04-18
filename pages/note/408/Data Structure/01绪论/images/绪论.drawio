@@ -22,9 +22,6 @@
                 <mxCell id="17" value="存储结构" style="text;html=1;strokeColor=#6F0000;fillColor=#a20025;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontColor=#ffffff;" parent="1" vertex="1">
                     <mxGeometry x="425" y="155" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="34" style="edgeStyle=none;html=1;" parent="1" source="18" target="32" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
                 <mxCell id="18" value="数据的运算&lt;br&gt;" style="text;html=1;strokeColor=#6F0000;fillColor=#a20025;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontColor=#ffffff;" parent="1" vertex="1">
                     <mxGeometry x="425" y="210" width="75" height="30" as="geometry"/>
                 </mxCell>
@@ -61,11 +58,6 @@
                 <mxCell id="31" value="时间复杂度" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;" parent="1" vertex="1">
                     <mxGeometry x="510" y="360" width="80" height="30" as="geometry"/>
                 </mxCell>
-                <UserObject label="linktest" link="/index.html" linkTarget="_blank" id="32">
-                    <mxCell style="text;html=1;strokeColor=none;fillColor=none;whiteSpace=wrap;align=center;verticalAlign=middle;fontColor=#0000EE;fontStyle=4;" parent="1" vertex="1">
-                        <mxGeometry x="530" y="205" width="60" height="40" as="geometry"/>
-                    </mxCell>
-                </UserObject>
             </root>
         </mxGraphModel>
     </diagram>
