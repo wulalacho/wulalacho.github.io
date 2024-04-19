@@ -16,19 +16,11 @@
 
 
 body {
-    background-color:#f0f0f0;
     font-family: 'Open sans', Sans Serif,Sans;
     margin: 0;
 }
 .content {
-    width: 80ch;
-    max-width: calc(100vw - 6em);
-    margin: 2em auto 2em 8em;
-    padding: 3rem;
-    box-shadow: 0 0px 8px -3px rgba(0, 0, 0.9, .5), 0 0px 5px -3px rgba(0, 0, 0, .5);
-    background-color: #fefefe;
-    min-height: 500px;
-    border-radius: 2px;
+    margin: 5em auto 2em auto;
 }
 
 .header {
@@ -52,37 +44,4 @@ body {
 .header a {
     font-size: 130%;
     font-family: 'Merienda';
-}
-
-.content a {
-    text-decoration: none;
-}
-li {
-    line-height: 1.8;
-}
-
-li::marker {
-    color: #d1d1d1;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Merienda';
-}
-
-.postdate {
-    float: right;
-    font-family: 'Merienda';
-}
-
-
-@media (max-width: 900px) {
-    .content {
-        margin: 2em auto 2em auto;
-        padding: 3rem 2rem 2rem 1.5rem;
-        max-width: calc(100vw - 3em);
-    }
-    
 }
