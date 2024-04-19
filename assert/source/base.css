@@ -45,6 +45,11 @@ body {
 }
 
 
+html{
+    scroll-padding-top: 60px;
+}
+
+
 .header span {
     margin-left: 2em;
 }

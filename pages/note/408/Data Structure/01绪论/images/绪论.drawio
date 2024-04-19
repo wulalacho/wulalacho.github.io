@@ -58,7 +58,7 @@
                 <mxCell id="31" value="时间复杂度" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;" parent="1" vertex="1">
                     <mxGeometry x="510" y="360" width="80" height="30" as="geometry"/>
                 </mxCell>
-                <UserObject label="Link" link="/pages/other/中文测试.html/#test" id="32">
+                <UserObject label="Link" link="/pages/other/中文测试.html#test" id="32">
                     <mxCell style="text;html=1;strokeColor=none;fillColor=none;whiteSpace=wrap;align=center;verticalAlign=middle;fontColor=#0000EE;fontStyle=4;" vertex="1" parent="1">
                         <mxGeometry x="610" y="270" width="60" height="40" as="geometry"/>
                     </mxCell>
