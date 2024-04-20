@@ -1,0 +1,36 @@
+
+
+
+.content p {
+    line-height: 1.625;
+    /* text-indent: 2em; */
+    overflow-wrap: normal;
+    word-break: normal;
+    display: block;
+    margin-block-start: 1em;
+    margin-inline-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: rgb(45, 45, 45);
+}
+
+.content a {
+    text-decoration: none;
+    color: #3730a3;
+}
+
+
+li {
+    line-height: 1.8;
+}
+
+li::marker {
+    color: #d1d1d1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Merienda';
+}
