@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>之后的一些规划</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=0.6" name="viewport">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/code.css">
+    <link rel="stylesheet" href="/css/post.css">
+    <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/showdown/2.0.0/showdown.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <span>Wulalacho's Web Page<a href="/index.html">Back to Home</a></span>
+        </div>
+        <div class="content" id="markdownContent">
+            
+        </div>
+    </div>
+
+    <script>
+        function renderMarkdown() {
+            // 创建一个 Showdown 实例
+            var converter = new showdown.Converter();
+            converter.setOption('omitExtraWLInCodeBlocks', true);
+            converter.setOption('ghCompatibleHeaderId', true);
+            converter.setOption('parseImgDimensions', true);
+            converter.setOption('strikethrough', true);
+            converter.setOption('tables', true);
+            converter.setOption('tasklists', true);
+            converter.setOption('simpleLineBreaks', true);
+            converter.setOption('openLinksInNewWindow', true);
+            converter.setOption('emoji', true);
+            converter.setOption('tables', true);
+
+            // 使用 Fetch API 异步加载 Markdown 文件
+            fetch('demo.md')
+                .then(response => response.text())
+                .then(markdownText => {
+                    // 将 Markdown 转换为 HTML
+                    var html = converter.makeHtml(markdownText);
+                    console.log(html);
+                    // 将 HTML 渲染到页面上
+                    document.getElementById('markdownContent').innerHTML = html;
+                    hljs.highlightAll();
+
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+
+        // 在页面加载完成后调用函数
+        window.onload = renderMarkdown;
+    </script>
+</body>
+
+</html>
