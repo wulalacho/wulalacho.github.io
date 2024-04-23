@@ -36,7 +36,7 @@
             converter.setOption('openLinksInNewWindow', true);
             converter.setOption('emoji', true);
             converter.setOption('tables', true);
-
+            var savedScrollPosition = sessionStorage.getItem('scrollPosition') || 0;
             // 使用 Fetch API 异步加载 Markdown 文件
             fetch('demo.md')
                 .then(response => response.text())
@@ -48,14 +48,24 @@
                     document.getElementById('markdownContent').innerHTML = html;
                     hljs.highlightAll();
 
+                    // 恢复滚动位置
+                window.scrollTo(0, savedScrollPosition);
+                 // 获取滚动位置
+
                 })
                 .catch(error => {
                     console.error('Error:', error);
                 });
         }
 
-        // 在页面加载完成后调用函数
-        window.onload = renderMarkdown;
+        
+    // 在页面加载完成后调用函数
+    window.onload = renderMarkdown;
+
+// 在页面关闭前保存滚动位置
+window.onbeforeunload = function() {
+    sessionStorage.setItem('scrollPosition', window.scrollY);
+};
     </script>
 </body>
 
