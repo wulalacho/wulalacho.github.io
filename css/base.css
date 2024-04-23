@@ -5,8 +5,8 @@
 }
 
 @font-face {
-    font-family: 'OpenSans';
-    src: url("/fonts/OpenSans-Regular.ttf");
+    font-family: 'Roboto';
+    src: url("/fonts/Roboto-Regular.ttf");
 }
 
 @font-face {
@@ -21,17 +21,17 @@ html {
 }
 
 body {
-    font-family: 'OpenSans', Sans Serif,Sans;
+    font-family: Roboto ,'Noto Sans', Sans Serif,Sans;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #e8eaed;
 }
 
 .container {
     width: 50rem;
     max-width: calc(100vw - 2rem);
     margin: 0 auto 5rem auto;
-    box-shadow: 0 0px 4px -3px rgba(0, 0, 0.9, .5), 0 0px 5px -3px rgba(0, 0, 0, .5);
-    background-color: #f7f7f7;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15);
+    background-color: white;
     border-radius: 2px;
 }
 
