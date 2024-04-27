@@ -17,11 +17,11 @@ var JSMIND_DATA_SAMPLE =  {
             {"id":"easy4","topic":"Easy to embed"}
         ]},
         {"id":"open","topic":"Open Source","direction":"right","expanded":true,"children":[
-            {"id":"open1","topic":"on GitHub"},
+            {"id":"open1","topic":"链接测试<a href='/pages/other/showdown.html#emojis'>Github Goodfanqie</a>"},
             {"id":"open2","topic":"BSD License"}
         ]},
         {"id":"hard","topic":"Hard","direction":"right","expanded":true,"children":[
-            {"id":"hard1","topic":"on GitHub"},
+            {"id":"hard1","topic":"on GitHuba"},
             {"id":"hard2","topic":"BSD License"}
         ]},
         {"id":"powerful","topic":"Powerful","direction":"right","children":[
